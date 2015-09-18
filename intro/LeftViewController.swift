@@ -10,8 +10,8 @@ import UIKit
 enum LeftMenu: Int {
     case Main = 0
     case Introduction
+    case Ask
     case About
-    case NonMenu
 }
 
 protocol LeftMenuProtocol : class {
@@ -23,12 +23,12 @@ class LeftViewController : UIViewController, LeftMenuProtocol {
     
     
     @IBOutlet weak var tableView: UITableView!
-    var menus = ["Main", "Introduction", "About"]
+    var menus = ["Main", "Introduction", "Ask your Rabbi","About"]
     var mainViewController: UIViewController!
     var swiftViewController: UIViewController!
     var aboutViewController: UIViewController!
     var introductionViewController: UIViewController!
-    var nonMenuViewController: UIViewController!
+    var askViewController: UIViewController!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -48,6 +48,9 @@ class LeftViewController : UIViewController, LeftMenuProtocol {
         
         let aboutViewController = storyboard.instantiateViewControllerWithIdentifier("AboutViewController") as! AboutViewController
         self.aboutViewController = UINavigationController(rootViewController: aboutViewController)
+        
+        let askViewController = storyboard.instantiateViewControllerWithIdentifier("AskViewController") as! AskViewController
+        self.askViewController = UINavigationController(rootViewController: askViewController)
         
         self.tableView.registerCellClass(BaseTableViewCell.self)
     }
@@ -85,8 +88,8 @@ class LeftViewController : UIViewController, LeftMenuProtocol {
         case .About:
             self.slideMenuController()?.changeMainViewController(self.aboutViewController, close: true)
             break
-        case .NonMenu:
-            self.slideMenuController()?.changeMainViewController(self.nonMenuViewController, close: true)
+        case .Ask:
+            self.slideMenuController()?.changeMainViewController(self.askViewController, close: true)
             break
         default:
             break

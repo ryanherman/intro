@@ -8,25 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		460D8C74A4C4318319D021F9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1726B772BEC95BE27EE13E4 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		940C40FE1BAB564A00D793CA /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C40FD1BAB564A00D793CA /* Test.swift */; };
+		940C41021BAB99E200D793CA /* AskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C41011BAB99E200D793CA /* AskViewController.swift */; };
 		9424DA9A1BAB42C10006FC6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9424DA991BAB42C10006FC6A /* AppDelegate.swift */; };
 		9424DA9C1BAB42C10006FC6A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9424DA9B1BAB42C10006FC6A /* MainViewController.swift */; };
 		9424DA9F1BAB42C10006FC6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9424DA9D1BAB42C10006FC6A /* Main.storyboard */; };
 		9424DAA11BAB42C10006FC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9424DAA01BAB42C10006FC6A /* Assets.xcassets */; };
 		9424DAA41BAB42C10006FC6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9424DAA21BAB42C10006FC6A /* LaunchScreen.storyboard */; };
-		949C56C51BAB46A700B9FC2F /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56C41BAB46A700B9FC2F /* LeftViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		949C56CC1BAB480E00B9FC2F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56C91BAB480E00B9FC2F /* StringExtension.swift */; settings = {ASSET_TAGS = (); }; };
-		949C56CD1BAB480E00B9FC2F /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56CA1BAB480E00B9FC2F /* UITableViewExtension.swift */; settings = {ASSET_TAGS = (); }; };
-		949C56CE1BAB480E00B9FC2F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56CB1BAB480E00B9FC2F /* UIViewControllerExtension.swift */; settings = {ASSET_TAGS = (); }; };
-		949C56D31BAB485300B9FC2F /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56D21BAB485300B9FC2F /* BaseTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		949C56D51BAB49F900B9FC2F /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56D41BAB49F900B9FC2F /* RightViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		949C56D71BAB4DD200B9FC2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949C56D61BAB4DD200B9FC2F /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		949C56D91BAB500D00B9FC2F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56D81BAB500D00B9FC2F /* AboutViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		949C56DB1BAB514A00B9FC2F /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56DA1BAB514A00B9FC2F /* IntroductionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		949C56C51BAB46A700B9FC2F /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56C41BAB46A700B9FC2F /* LeftViewController.swift */; };
+		949C56CC1BAB480E00B9FC2F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56C91BAB480E00B9FC2F /* StringExtension.swift */; };
+		949C56CD1BAB480E00B9FC2F /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56CA1BAB480E00B9FC2F /* UITableViewExtension.swift */; };
+		949C56CE1BAB480E00B9FC2F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56CB1BAB480E00B9FC2F /* UIViewControllerExtension.swift */; };
+		949C56D31BAB485300B9FC2F /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56D21BAB485300B9FC2F /* BaseTableViewCell.swift */; };
+		949C56D51BAB49F900B9FC2F /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56D41BAB49F900B9FC2F /* RightViewController.swift */; };
+		949C56D71BAB4DD200B9FC2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949C56D61BAB4DD200B9FC2F /* Images.xcassets */; };
+		949C56D91BAB500D00B9FC2F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56D81BAB500D00B9FC2F /* AboutViewController.swift */; };
+		949C56DB1BAB514A00B9FC2F /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C56DA1BAB514A00B9FC2F /* IntroductionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		469967E1E8D978810FE339B6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		747A221F04E9F12CBFDE9735 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		940C40FD1BAB564A00D793CA /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		940C41011BAB99E200D793CA /* AskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskViewController.swift; sourceTree = "<group>"; };
 		9424DA961BAB42C10006FC6A /* intro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9424DA991BAB42C10006FC6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9424DA9B1BAB42C10006FC6A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -67,9 +71,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		940C40FC1BAB563E00D793CA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				940C40FD1BAB564A00D793CA /* Test.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		9424DA8D1BAB42C10006FC6A = {
 			isa = PBXGroup;
 			children = (
+				940C40FC1BAB563E00D793CA /* Data */,
 				9424DA981BAB42C10006FC6A /* intro */,
 				9424DA971BAB42C10006FC6A /* Products */,
 				4C72625D6F97663D61718763 /* Pods */,
@@ -118,6 +131,7 @@
 				949C56D41BAB49F900B9FC2F /* RightViewController.swift */,
 				949C56D81BAB500D00B9FC2F /* AboutViewController.swift */,
 				949C56DA1BAB514A00B9FC2F /* IntroductionViewController.swift */,
+				940C41011BAB99E200D793CA /* AskViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +214,7 @@
 		9424DA8E1BAB42C10006FC6A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Miller Program";
 				TargetAttributes = {
@@ -299,6 +314,8 @@
 				9424DA9C1BAB42C10006FC6A /* MainViewController.swift in Sources */,
 				949C56CC1BAB480E00B9FC2F /* StringExtension.swift in Sources */,
 				949C56D91BAB500D00B9FC2F /* AboutViewController.swift in Sources */,
+				940C41021BAB99E200D793CA /* AskViewController.swift in Sources */,
+				940C40FE1BAB564A00D793CA /* Test.swift in Sources */,
 				949C56CD1BAB480E00B9FC2F /* UITableViewExtension.swift in Sources */,
 				9424DA9A1BAB42C10006FC6A /* AppDelegate.swift in Sources */,
 				949C56CE1BAB480E00B9FC2F /* UIViewControllerExtension.swift in Sources */,
@@ -418,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = intro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aju.intro;
@@ -431,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = intro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aju.intro;

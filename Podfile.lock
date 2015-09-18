@@ -3,7 +3,7 @@ PODS:
   - SlideMenuControllerSwift (2.0.0)
 
 DEPENDENCIES:
-  - Firebase
+  - Firebase (>= 2.3.3)
   - SlideMenuControllerSwift
 
 SPEC CHECKSUMS:

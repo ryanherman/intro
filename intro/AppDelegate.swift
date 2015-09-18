@@ -8,6 +8,7 @@
 
 import UIKit
 import SlideMenuControllerSwift
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,7 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
     }
-
+    
+    override init() {
+        super.init()
+        Firebase.defaultConfig().persistenceEnabled = true
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.createMenuView()
