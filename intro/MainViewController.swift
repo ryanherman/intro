@@ -8,9 +8,12 @@
 
 import UIKit
 import Firebase
+import MediaPlayer
+import AVKit
 class MainViewController: UIViewController {
    
     let ref = Firebase(url: "https://flickering-torch-4367.firebaseio.com/users")
+    var moviePlayer : MPMoviePlayerController?
 
     private func initialize() {
         ref.observeEventType(.Value, withBlock: {
@@ -41,6 +44,38 @@ class MainViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
+    @IBAction func playIntro(sender: AnyObject) {
+        dispatch_async(dispatch_get_main_queue()) {
+            self.playVideo()
+        }
+    }
+    
+    func playVideo() {
+        let path = NSBundle.mainBundle().pathForResource("aju", ofType:"mov")
+        let url = NSURL.fileURLWithPath(path!)
+        moviePlayer = MPMoviePlayerController(contentURL: url)
+ 
+        if let player = moviePlayer {
+            player.view.frame = self.view.bounds
+            player.prepareToPlay()
+            player.scalingMode = .AspectFit
+            player.controlStyle = .Fullscreen
+            NSNotificationCenter.defaultCenter().addObserver(self,
+                selector: "videoHasFinishedPlaying:",
+                name: MPMoviePlayerPlaybackDidFinishNotification,
+                object: nil)
+            
+            self.view.addSubview(player.view)
+        }
+    }
+    
+    func videoHasFinishedPlaying(notification: NSNotification){
+        print("Video finished playing")
+        moviePlayer!.view.removeFromSuperview()
+    }
+    
     
     
 }

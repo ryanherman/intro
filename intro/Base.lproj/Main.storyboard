@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -169,14 +169,70 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d9G-CY-M4v">
+                                <rect key="frame" x="20" y="273" width="374" height="396"/>
+                                <animations/>
+                                <mutableString key="text">Welcome,
+
+The Miller Introduction to Judaism Program at American Jewish University is the nation's pre-eminent center for welcoming and empowering those who seek to convert to Judaism and all others who wish to learn more and find a home in the Jewish community. 
+
+Our interactive, exciting courses explore Jewish history, practice, texts, and culture and are designed for anyone who seeks to live a richer Jewish life, including those contemplating conversion to Judaism. Classes are joined with beautiful Shabbat retreats, supportive discussion groups, individualized Hebrew reading instruction, and a vibrant "INTRO 2.0" alumni community that provides countless opportunities to explore Judaism beyond the classroom.
+
+We believe that Judaism has the power to transform lives, offer meaning, create community, and maybe even help save the world. Join us for an in-depth introduction to Judaism that will open your mind, heart, and soul.
+
+Your journey begins here.
+
+B'Shalom,</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTRODUCTION TO JUDAISM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRs-qd-Xp5">
+                                <rect key="frame" x="107" y="42" width="201" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wMp-Vs-dlM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bee-kF-w48">
+                                <rect key="frame" x="124" y="71" width="165" height="202"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="Vav-Nd-Gqt"/>
+                                    <constraint firstAttribute="height" constant="202" id="x72-Cn-D7k"/>
+                                </constraints>
+                                <state key="normal" image="adamgreenwald_final"/>
+                                <connections>
+                                    <action selector="playIntro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZb-Kk-0is"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d9G-CY-M4v" secondAttribute="bottom" constant="67" id="D2S-2l-cEq"/>
+                            <constraint firstItem="YRs-qd-Xp5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="IHI-tM-sgC"/>
+                            <constraint firstItem="Bee-kF-w48" firstAttribute="top" secondItem="YRs-qd-Xp5" secondAttribute="bottom" constant="8" symbolic="YES" id="NB0-gP-QF8"/>
+                            <constraint firstItem="d9G-CY-M4v" firstAttribute="top" secondItem="Bee-kF-w48" secondAttribute="bottom" id="UtU-ag-q6f"/>
+                            <constraint firstItem="d9G-CY-M4v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="k6R-JG-40I"/>
+                            <constraint firstItem="YRs-qd-Xp5" firstAttribute="centerX" secondItem="d9G-CY-M4v" secondAttribute="centerX" id="rmZ-Yf-8Hh"/>
+                            <constraint firstItem="d9G-CY-M4v" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vAa-aw-ff1"/>
+                            <constraint firstItem="Bee-kF-w48" firstAttribute="centerX" secondItem="d9G-CY-M4v" secondAttribute="centerX" id="wyt-ZW-RDh"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1088" y="1166"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="adamgreenwald_final" width="853" height="1024"/>
+    </resources>
 </document>
